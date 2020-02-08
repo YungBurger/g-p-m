@@ -1,6 +1,6 @@
 module.exports = {
     // Used to set the name of the mod. Note this is what will be shown on the dashboard.
-    name: "Bot User Count",
+    name: "Bot Channel Count",
 
     // This does nothing currently but in the future I plan on sorting stuff by sections. 
     section: "Test",
@@ -12,7 +12,7 @@ module.exports = {
     version: "1.0.0",
 
     // You can set the mods description here and this will show up on the dashboard.
-    short_description: "Returns the bots amount of users.",
+    short_description: "Returns the bots amount of channels.",
 
     // If you want to add custom html to the mod set this to true. If not set this to false.
     customHtml: false,
@@ -27,6 +27,6 @@ module.exports = {
 
     // Whenever the command is executed this is the code that will be ran. You can use req to get stuff, note this only works if you add custom html. 
     run: async (client, req, res) => {
-        client.log = `Amount of users: ${client.users.array().length}`
+        client.log = `Amount of users: ${client.channels.size}`
     }
 }

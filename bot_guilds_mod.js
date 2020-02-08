@@ -1,6 +1,6 @@
 module.exports = {
     // Used to set the name of the mod. Note this is what will be shown on the dashboard.
-    name: "Bot Guilds",
+    name: "Bot Guild Count",
 
     // This does nothing currently but in the future I plan on sorting stuff by sections. 
     section: "Test",

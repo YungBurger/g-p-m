@@ -27,6 +27,6 @@ module.exports = {
 
     // Whenever the command is executed this is the code that will be ran. You can use req to get stuff, note this only works if you add custom html. 
     run: async (client, req, res) => {
-        client.log = `Amount of users: ${client.channels.size}`
+        client.log = `Amount of channels: ${client.channels.size}`
     }
 }
